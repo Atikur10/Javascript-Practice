@@ -1,0 +1,6 @@
+@media (max-width: 600px) {
+  input[type="text"]::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+<body>
+    <button onclick="console.log('Hello World')">Click Me!</button>
+    <button onclick="console.log(6)">Click Me!</button>
+    <button onclick="console.log(9)">Click Me!</button>
+    <button onclick="console.log(9)">Click Me!</button>
+    <!-- way 01 -->
+    <button onclick="document.body.style.backgroundColor = 'gray'"> Gray Button</button>
+    <!-- way 02 -->
+    <button onclick="makeTomato()">Tomato Button</button>
+    <!-- way 03 -->
+    <button id="red">Red Button</button>
+    <!-- way 04 -->
+    <button id="make-pink">Pink Button</button>
+    <!-- way 04. 01 -->
+    <button id="make-green">Green Button</button>
+    <!-- way 05 -->
+    <button id="make-goldenrod">Goldenrod button</button>
+
+
+
+
+    <button onclick="readMoreEvent()">Read more</button>
+    <button id="read-more">click more</button>
+    <script>
+        function readMoreEvent(){
+            document.body.innerText = 'Hello Bangladesh'
+        }
+
+        document.getElementById('read-more').addEventListener('click', function(){
+            document.body.innerHTML = `
+            <h1>I am learning How to handle Event in Javascript
+            `
+        })
+    </script>
+
+
+
+
+
+
+
+    <script src="/Milestone-5/JS-DOM-EVENTS/events.js"></script>
+</body>
+</html>

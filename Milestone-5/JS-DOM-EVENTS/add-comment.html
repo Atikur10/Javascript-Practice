@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Comment in HTML</title>
+</head>
+<body>
+    <div id="comment-container">
+        <h1>Add new comment in html page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima, quisquam quos voluptatibus ducimus quis neque consectetur architecto id? Suscipit quidem quod eligendi facere porro rem, in, dolor dolorem quam totam illo quae adipisci, unde illum. Quae, voluptatum aperiam. Aspernatur repellendus eos consequatur fuga id error quae modi dolorem qui!</p>
+        <p>Velit dolorum numquam quae expedita veniam eaque labore adipisci ipsa minus officiis magni saepe maxime rerum ratione ab enim iusto, ut modi reiciendis eos praesentium nam sed placeat. Omnis totam velit, ipsum corporis facere reprehenderit maiores consequatur hic facilis iusto est qui dolor, nesciunt ab error! Voluptas facere nam saepe.</p>
+        <p>Iure debitis dolores dolor porro ex quaerat facere neque optio eligendi, labore et quidem modi repellendus sunt eum. Sunt, minima molestiae, numquam, suscipit in maiores ad cupiditate quae saepe provident libero ea iure eos quos quas dignissimos enim maxime iste natus eius delectus rem ex! Ducimus enim incidunt animi placeat?</p>
+    </div>
+    <div>
+        <textarea name="" id="input-area" cols="60" rows="10"></textarea>
+        <br>
+        <button id="button-update">post</button>
+    </div>
+
+    <script>
+        document.getElementById('button-update').addEventListener('click', function(){
+            const inputArea = document.getElementById('input-area');
+            const inputText = inputArea.value;
+
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = inputText;
+            commentContainer.appendChild(p);
+            inputArea.value = '';
+        })
+    </script>
+    
+</body>
+</html>
